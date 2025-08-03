@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhakti - My Love ❤️</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="logo">
+                <i class="fas fa-heart"></i>
+                <span>Bhakti</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#love">Our Love</a></li>
+                <li><a href="#memories">Memories</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#message">Message</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="floating-hearts">
+                <i class="fas fa-heart"></i>
+                <i class="fas fa-heart"></i>
+                <i class="fas fa-heart"></i>
+                <i class="fas fa-heart"></i>
+                <i class="fas fa-heart"></i>
+            </div>
+            <h1 class="hero-title">
+                <span class="typing-text">Dear Bhakti</span>
+            </h1>
+            <p class="hero-subtitle">Every moment with you is a blessing ❤️</p>
+            <div class="hero-buttons">
+                <button class="btn-primary" onclick="showLoveMessage()">
+                    <i class="fas fa-heart"></i> I Love You
+                </button>
+                <button class="btn-secondary" onclick="playMusic()">
+                    <i class="fas fa-music"></i> Play Our Song
+                </button>
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="heart-container">
+                <div class="heart"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Love Counter Section -->
+    <section id="love" class="love-counter">
+        <div class="container">
+            <h2>Our Love Journey</h2>
+            <div class="counter-grid">
+                <div class="counter-item">
+                    <div class="counter-number" id="days-counter">0</div>
+                    <div class="counter-label">Days Together</div>
+                </div>
+                <div class="counter-item">
+                    <div class="counter-number" id="hours-counter">0</div>
+                    <div class="counter-label">Hours of Love</div>
+                </div>
+                <div class="counter-item">
+                    <div class="counter-number" id="minutes-counter">0</div>
+                    <div class="counter-label">Minutes of Joy</div>
+                </div>
+                <div class="counter-item">
+                    <div class="counter-number" id="seconds-counter">0</div>
+                    <div class="counter-label">Seconds of Happiness</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Memories Section -->
+    <section id="memories" class="memories">
+        <div class="container">
+            <h2>Our Beautiful Memories</h2>
+            <div class="memory-cards">
+                <div class="memory-card" onclick="showMemory(1)">
+                    <div class="memory-icon">
+                        <i class="fas fa-coffee"></i>
+                    </div>
+                    <h3>First Coffee Date</h3>
+                    <p>That magical moment when our eyes first met...</p>
+                </div>
+                <div class="memory-card" onclick="showMemory(2)">
+                    <div class="memory-icon">
+                        <i class="fas fa-moon"></i>
+                    </div>
+                    <h3>Starry Nights</h3>
+                    <p>Counting stars and sharing dreams together...</p>
+                </div>
+                <div class="memory-card" onclick="showMemory(3)">
+                    <div class="memory-icon">
+                        <i class="fas fa-umbrella-beach"></i>
+                    </div>
+                    <h3>Beach Walks</h3>
+                    <p>Walking hand in hand by the ocean...</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <h2>Our Love Gallery</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <div class="placeholder-image">
+                        <i class="fas fa-heart"></i>
+                        <p>Our First Photo</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="placeholder-image">
+                        <i class="fas fa-camera"></i>
+                        <p>Special Moments</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="placeholder-image">
+                        <i class="fas fa-smile"></i>
+                        <p>Happy Times</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="placeholder-image">
+                        <i class="fas fa-star"></i>
+                        <p>Magical Memories</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Love Message Section -->
+    <section id="message" class="love-message">
+        <div class="container">
+            <h2>A Message for You, Bhakti</h2>
+            <div class="message-content">
+                <div class="message-text">
+                    <p>Dear Bhakti,</p>
+                    <p>Every day I wake up thinking of you, and every night I fall asleep with your beautiful smile in my mind. You are the most amazing person I've ever met, and I'm so grateful to have you in my life.</p>
+                    <p>Your love makes every day feel like a new adventure. You bring so much joy, laughter, and warmth into my world. I promise to love you more with each passing day.</p>
+                    <p>You are my everything, my today, my tomorrow, and my forever.</p>
+                    <p class="signature">With all my love,<br>Your Forever Love ❤️</p>
+                </div>
+                <div class="message-actions">
+                    <button class="btn-love" onclick="sendVirtualKiss()">
+                        <i class="fas fa-kiss-wink-heart"></i> Send Virtual Kiss
+                    </button>
+                    <button class="btn-love" onclick="showLoveAnimation()">
+                        <i class="fas fa-magic"></i> Love Magic
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>Made with ❤️ for Bhakti</p>
+            <div class="footer-hearts">
+                <i class="fas fa-heart"></i>
+                <i class="fas fa-heart"></i>
+                <i class="fas fa-heart"></i>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Love Modal -->
+    <div id="loveModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="modal-body">
+                <h3>I Love You, Bhakti! ❤️</h3>
+                <p>You are the most beautiful person I've ever known. Thank you for being you!</p>
+                <div class="love-animation">
+                    <div class="heart-burst"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
